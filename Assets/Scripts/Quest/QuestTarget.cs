@@ -7,5 +7,6 @@ namespace Quest {
         public float KeyExpected;
         public int StageOnComplete;
         public bool Unlocked = false;
+        public GameObject PrefabToSpawn;
     }
 }

@@ -14,6 +14,7 @@ namespace Quest {
                 bool x = QuestManager.Instance.UpdateStage(target.StageOnComplete);
                 if (x) {
                     target.Unlocked = true;
+                    Instantiate(target.PrefabToSpawn, target.transform.position, target.transform.rotation);
                     if (OneTimeUse) {
                         used = true;
                     }

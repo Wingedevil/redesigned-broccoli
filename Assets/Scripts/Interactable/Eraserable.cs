@@ -6,6 +6,7 @@ namespace Interactable {
     [RequireComponent(typeof(SpriteRenderer))]
     public class Eraserable : MonoBehaviour {
         public float Resistance = 0;
+        public GameObject PrefabToSpawn;
 
         private SpriteRenderer sprite;
 
@@ -21,6 +22,7 @@ namespace Interactable {
                 if (tmp.a > 0) {
                     GetComponent<SpriteRenderer>().color = tmp;
                 } else {
+                    Instantiate(PrefabToSpawn, transform.position, transform.rotation);
                     Destroy(this.gameObject);
                 }
 
@@ -34,6 +36,7 @@ namespace Interactable {
                 if (tmp.a > 0) {
                     GetComponent<SpriteRenderer>().color = tmp;
                 } else {
+                    Instantiate(PrefabToSpawn, transform.position, transform.rotation);
                     Destroy(this.gameObject);
                 }
 
