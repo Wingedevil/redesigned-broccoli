@@ -8,6 +8,8 @@ namespace Interactable {
     public class DragSnapTo : MonoBehaviour {
         public Transform AnchorPoint;
         public float DistToSnap = 1f;
+        public string Key;
+
         private void Awake() {
             InteractableManager.Instance.AnchorPoints.Add(this);
         }
