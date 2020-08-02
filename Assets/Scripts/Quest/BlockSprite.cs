@@ -5,7 +5,7 @@ using Managers;
 
 namespace Quest {
     [RequireComponent(typeof(SpriteRenderer))]
-    public class QuestVisible : MonoBehaviour {
+    public class BlockSprite : MonoBehaviour {
         public int[] StageEnabled;
 
         private SpriteRenderer sprite;
@@ -27,7 +27,9 @@ namespace Quest {
                     return;
                 }
             }
-            sprite.enabled = false;
+            if (sprite != null) {
+                sprite.enabled = false;
+            }
         }
     }
 }

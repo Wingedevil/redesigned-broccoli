@@ -16,18 +16,21 @@ namespace Interactable {
         }
         private void OnMouseUp() {
             DragSnapTo finalPoint = null;
+            float nearest = float.PositiveInfinity;
             foreach (DragSnapTo point in InteractableManager.Instance.AnchorPoints) {
                 if (this.Key != point.Key) {
                     continue;
                 }
-                float nearest = point.DistToSnap; 
-                if (Vector3.Distance(point.AnchorPoint.position, transform.position) <= nearest) {
+                float dist = Vector3.Distance(point.AnchorPoint.position, transform.position);
+                if (dist <= point.DistToSnap && dist <= nearest) {
                     finalPoint = point;
-                    nearest = Vector3.Distance(point.AnchorPoint.position, transform.position);
+                    nearest = dist;
                 }
             }
-            transform.position = finalPoint.AnchorPoint.position;
-            finalPoint.Snapped(this.gameObject);
+            if (finalPoint != null) {
+                transform.position = finalPoint.AnchorPoint.position;
+                finalPoint.Snapped(this.gameObject);
+            }
         }
     }
 }

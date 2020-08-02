@@ -4,7 +4,7 @@ using UnityEngine;
 using Managers;
 
 namespace Quest {
-    public class QuestOnDestroyProgress : MonoBehaviour {
+    public class ProgressOnDestroy : MonoBehaviour {
         public int StageOnComplete;
 
         private void OnDestroy() {

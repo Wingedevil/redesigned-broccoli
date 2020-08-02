@@ -5,10 +5,10 @@ using Managers;
 
 namespace Quest {
     [RequireComponent(typeof(Collider2D))]
-    public class QuestGate : MonoBehaviour {
+    public class BlockCollider : MonoBehaviour {
         public int[] StageEnabled;
 
-        private Collider2D collider;
+        private Collider2D enableCollider;
 
         private void Start() {
             QuestManager.Instance.OnStageUpdate += StageUpdate;
@@ -16,18 +16,20 @@ namespace Quest {
             if (StageEnabled.Length <= 0) {
                 return;
             }
-            collider = GetComponent<Collider2D>();
+            enableCollider = GetComponent<Collider2D>();
             StageUpdate(0);
         }
 
         public void StageUpdate(int stage) {
             foreach (int i in StageEnabled) {
                 if (i == stage) {
-                    collider.enabled = true;
+                    enableCollider.enabled = true;
                     return;
                 }
             }
-            collider.enabled = false;
+            if (enableCollider != null) {
+                enableCollider.enabled = false;
+            }
         }
     }
 }

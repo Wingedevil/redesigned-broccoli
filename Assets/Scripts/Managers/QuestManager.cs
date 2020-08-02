@@ -9,7 +9,7 @@ namespace Managers {
     public class QuestManager : Manager<QuestManager> {
         [HideInInspector]
         public int CurrentQuestStage;
-        public Action<int> OnStageUpdate;
+        public Action<int> OnStageUpdate = (int x) => {};
 
         private int stagnate;
 
@@ -24,8 +24,13 @@ namespace Managers {
             return true;
         }
 
+        public int StagnateLevel() {
+            return stagnate;
+        }
+
         public void Stagnate(int b) {
             stagnate += b;
+            Debug.Log("Stagnate Level: " + stagnate);   
         }
     }
 }

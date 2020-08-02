@@ -14,9 +14,13 @@ namespace Interactable {
             InteractableManager.Instance.AnchorPoints.Add(this);
         }
         public void Snapped(GameObject other) {
-            if (TryGetComponent<QuestTarget>(out QuestTarget target)) {
-                if (other.TryGetComponent<QuestKey>(out QuestKey key)) {
+            if (TryGetComponent<ProgressLock>(out ProgressLock target)) {
+                if (other.TryGetComponent<ProgressKey>(out ProgressKey key)) {
                     key.Unlock(target);
+                }
+            } else if (TryGetComponent<ProgressKey>(out ProgressKey key)) {
+                if (other.TryGetComponent<ProgressLock>(out ProgressLock tar)) {
+                    key.Unlock(tar);
                 }
             }
         }
