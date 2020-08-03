@@ -12,13 +12,23 @@ namespace Managers {
                 return false;
             } else {
                 playingClips.Add(ac);
-                StartCoroutine(Reset(ac));
+                StartCoroutine(Reset(ac, ac.length));
                 return true;
             }
         }
 
-        IEnumerator Reset(AudioClip ac) {
-            yield return new WaitForSeconds(ac.length);
+        public bool CanPlaySoundWithDelay(AudioClip ac, float time) {
+            if (playingClips.Contains(ac)) {
+                return false;
+            } else {
+                playingClips.Add(ac);
+                StartCoroutine(Reset(ac, time));
+                return true;
+            }
+        }
+
+        IEnumerator Reset(AudioClip ac, float time) {
+            yield return new WaitForSeconds(time);
             playingClips.Remove(ac);
         }
     }
