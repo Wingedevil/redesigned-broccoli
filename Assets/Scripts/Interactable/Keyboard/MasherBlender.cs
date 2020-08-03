@@ -30,12 +30,14 @@ public class MasherBlender : KeyMasherReceiver {
             pressed = false;
             switch (phase) {
                 case 0:
-                case 3:
                     phase = 1;
                     break;
                 case 1:
                 case 2:
                     phase = 2;
+                    break;
+                case 3:
+                    phase = 0;
                     break;
             }
         } else {

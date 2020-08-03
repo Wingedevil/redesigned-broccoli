@@ -3304,7 +3304,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: e2d9c52af1edf4c4584301975af71c93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06c54e1b1e1e00b41b6dc871746c56a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3312,7 +3312,7 @@ SpriteRenderer:
   m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1375184537
@@ -3676,15 +3676,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 8c07dc03e985d39419ff54a07fca53e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1536991835
@@ -3733,7 +3733,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 122ce8b779a5c07449076d52ac200bc9, type: 3}
   StageOnFirstCycle: 31
   StageOnNthCycle: 40
-  N: 50
+  N: 30
   PrefabToSpawn: {fileID: 8247178485345671435, guid: 586503b18105ee143b5b15b5848851b3, type: 3}
   clips:
   - {fileID: 0}
