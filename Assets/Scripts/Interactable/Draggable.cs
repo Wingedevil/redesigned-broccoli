@@ -32,5 +32,10 @@ namespace Interactable {
                 finalPoint.Snapped(this.gameObject);
             }
         }
+        private void OnDestroy() {
+            if (TryGetComponent<SpriteRenderer>(out SpriteRenderer sr)) {
+                sr.material.SetFloat("_OutlineSize", 0f);
+            }
+        }
     }
 }

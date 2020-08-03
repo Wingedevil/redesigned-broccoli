@@ -17,7 +17,6 @@ public class MasherBlender : KeyMasherReceiver {
     private int n = 0;
 
     public override void OnCompleteSequence() {
-        Debug.Log("Mix");
         spriteRenderer.sprite = Cycle[spriteIndex++];
         spriteIndex %= Cycle.Length;
         n++;

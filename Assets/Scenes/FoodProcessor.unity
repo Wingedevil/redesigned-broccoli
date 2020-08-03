@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageEnabled: 0a000000
+  OutlineSize: 15
 --- !u!114 &19475258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,6 +906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageEnabled: 0a000000
+  OutlineSize: 15
 --- !u!114 &134253581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,6 +2074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageEnabled: 0a000000
+  OutlineSize: 15
 --- !u!114 &654145805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,6 +3070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageEnabled: 0a000000
+  OutlineSize: 15
 --- !u!114 &1269379911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3827,7 +3831,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: eede6a0ec8a810a418d64e55082d47c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3992,6 +3996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageEnabled: 0000000014000000
+  OutlineSize: 15
 --- !u!1 &1764827856
 GameObject:
   m_ObjectHideFlags: 0
