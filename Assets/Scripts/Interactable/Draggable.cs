@@ -28,7 +28,8 @@ namespace Interactable {
                 }
             }
             if (finalPoint != null) {
-                transform.position = finalPoint.AnchorPoint.position;
+                transform.parent = finalPoint.AnchorPoint;
+                transform.localPosition = Vector3.zero;
                 finalPoint.Snapped(this.gameObject);
             }
         }
