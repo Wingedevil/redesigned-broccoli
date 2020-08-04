@@ -38,6 +38,9 @@ namespace Quest {
                 if (@lock.TryGetComponent<Draggable>(out Draggable drag)) {
                     Destroy(drag);
                 }
+                if (@lock.TryGetComponent<Clickable>(out Clickable click)) {
+                    Destroy(click);
+                }
 
                 bool x = QuestManager.Instance.UpdateStage(@lock.StageOnComplete);
                 if (x) {
