@@ -6,6 +6,7 @@ using Interactable;
 
 namespace Managers {
     public class InteractableManager : Manager<InteractableManager> {
-        public List<DragSnapTo> AnchorPoints = new List<DragSnapTo>();
+        public HashSet<DragSnapTo> AnchorPoints = new HashSet<DragSnapTo>();
+        public HashSet<Grabbable> GrabPoints = new HashSet<Grabbable>();
     }
 }

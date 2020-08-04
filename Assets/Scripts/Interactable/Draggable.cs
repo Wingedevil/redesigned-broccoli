@@ -20,23 +20,9 @@ namespace Interactable {
             transform.position = curPosition;
         }
         private void OnMouseUp() {
-            DragSnapTo finalPoint = null;
-            float nearest = float.PositiveInfinity;
-            foreach (DragSnapTo point in InteractableManager.Instance.AnchorPoints) {
-                if (this.Key != point.Key) {
-                    continue;
-                }
-                float dist = Vector3.Distance(point.AnchorPoint.position, transform.position);
-                if (dist <= point.DistToSnap && dist <= nearest) {
-                    finalPoint = point;
-                    nearest = dist;
-                }
-            }
-            if (finalPoint != null) {
-                transform.parent = finalPoint.AnchorPoint;
-                transform.localPosition = Vector3.zero;
-                finalPoint.Snapped(this.gameObject);
-            }
+            SnapToNearest();
+            GrabFromNearest();
+
             if (TryGetComponent<RotateOnDrag>(out RotateOnDrag rotate)) {
                 rotate.Unrotate();
             }
@@ -44,6 +30,49 @@ namespace Interactable {
         private void OnDestroy() {
             if (TryGetComponent<SpriteRenderer>(out SpriteRenderer sr)) {
                 sr.material.SetFloat("_OutlineSize", 0f);
+            }
+        }
+
+        private void SnapToNearest() {
+            DragSnapTo toSnap = null;
+            float nearestSnap = float.PositiveInfinity;
+
+            foreach (DragSnapTo point in InteractableManager.Instance.AnchorPoints) {
+                if (this.Key != point.Key) {
+                    continue;
+                }
+                float dist = Vector3.Distance(point.AnchorPoint.position, transform.position);
+                if (dist <= point.DistToSnap && dist <= nearestSnap) {
+                    toSnap = point;
+                    nearestSnap = dist;
+                }
+            }
+            if (toSnap != null) {
+                transform.parent = toSnap.AnchorPoint;
+                transform.localPosition = Vector3.zero;
+                toSnap.Snapped(this.gameObject);
+            }
+        }
+
+        private void GrabFromNearest() {
+            Grabbable toGrab = null;
+            float nearestGrab = float.PositiveInfinity;
+            
+            foreach (Grabbable point in InteractableManager.Instance.GrabPoints)
+            {
+                if (this.Key != point.Key) {
+                    continue;
+                }
+                float dist = Vector3.Distance(point.transform.position, transform.position);
+                if (dist <= point.DistToGrab && dist <= nearestGrab) {
+                    toGrab = point;
+                    nearestGrab = dist;
+                }
+            }
+            if (toGrab != null) {
+                toGrab.transform.parent = toGrab.SnapPoint;
+                toGrab.transform.localPosition = Vector3.zero;
+                toGrab.Grabbed(this.gameObject);
             }
         }
     }

@@ -291,70 +291,6 @@ MonoBehaviour:
   Timer: 5
   RequiredStage: 14000000
   StageOnComplete: 30
---- !u!1 &9506697
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9506698}
-  - component: {fileID: 9506699}
-  - component: {fileID: 9506700}
-  m_Layer: 0
-  m_Name: Ladle Receiver
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9506698
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9506697}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.52, y: 0.61, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 828832374}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9506699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9506697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b987544943a62d6419185fcb8bda577c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AnchorPoint: {fileID: 9506698}
-  DistToSnap: 3
-  Key: ladle
---- !u!114 &9506700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9506697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d74b1895f673d4d81049cbf245ff8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KeyExpected: 51
-  RequiredStage: 32000000
-  StageOnComplete: 60
-  Unlocked: 0
-  PrefabToSpawn: {fileID: 8247178485345671435, guid: 586503b18105ee143b5b15b5848851b3, type: 3}
 --- !u!1 &19475251
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d66197849cebef4b9c76424f9fd0227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnchorPoints: []
 --- !u!4 &231037487
 Transform:
   m_ObjectHideFlags: 0
@@ -2055,6 +1990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817439151}
   - component: {fileID: 817439152}
+  - component: {fileID: 817439153}
   m_Layer: 0
   m_Name: Ladle Receiver
   m_TagString: Untagged
@@ -2092,6 +2028,20 @@ MonoBehaviour:
   AnchorPoint: {fileID: 817439151}
   DistToSnap: 50
   Key: ladle
+--- !u!114 &817439153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817439150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c2d4b182636431a86e055112fc5c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageEnabled: 2800000032000000
+  enableSnap: {fileID: 817439152}
 --- !u!1 &823371583
 GameObject:
   m_ObjectHideFlags: 0
@@ -2182,7 +2132,7 @@ Transform:
   m_Children:
   - {fileID: 788764107}
   - {fileID: 1706012124}
-  - {fileID: 9506698}
+  - {fileID: 1091743560}
   - {fileID: 1469037866}
   m_Father: {fileID: 1385058408}
   m_RootOrder: 1
@@ -7060,6 +7010,98 @@ MonoBehaviour:
   AnchorPoint: {fileID: 1004807917}
   DistToSnap: 50
   Key: mantou3
+--- !u!1 &1091743559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1091743560}
+  - component: {fileID: 1091743561}
+  - component: {fileID: 1091743564}
+  - component: {fileID: 1091743563}
+  - component: {fileID: 1091743562}
+  m_Layer: 0
+  m_Name: Ladle Receiver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1091743560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091743559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.63, y: 0.77, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 828832374}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091743561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091743559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b987544943a62d6419185fcb8bda577c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnchorPoint: {fileID: 1091743560}
+  DistToSnap: 3
+  Key: ladle
+--- !u!114 &1091743562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091743559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c2d4b182636431a86e055112fc5c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageEnabled: 3c000000
+  enableSnap: {fileID: 1091743563}
+--- !u!114 &1091743563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091743559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b987544943a62d6419185fcb8bda577c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnchorPoint: {fileID: 1091743560}
+  DistToSnap: 50
+  Key: ladle
+--- !u!114 &1091743564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091743559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c2d4b182636431a86e055112fc5c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageEnabled: 2800000032000000
+  enableSnap: {fileID: 1091743561}
 --- !u!1 &1229405741
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,6 +7117,7 @@ GameObject:
   - component: {fileID: 1229405744}
   - component: {fileID: 1229405747}
   - component: {fileID: 1229405748}
+  - component: {fileID: 1229405749}
   m_Layer: 0
   m_Name: Fry_Ladle
   m_TagString: Untagged
@@ -7092,7 +7135,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.89599997, y: 0.21799994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1995222938}
   m_Father: {fileID: 817439151}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7172,7 +7216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a539f2c5127294ba7fb9e20f0205fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StageEnabled: 32000000
+  StageEnabled: 320000003c000000
   OutlineSize: 15
 --- !u!60 &1229405746
 PolygonCollider2D:
@@ -8686,9 +8730,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b31d81e98ffae3479199de1f9828666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: 0
+  Timer: 10
   RequiredStage: 28000000
   StageOnComplete: 50
+--- !u!114 &1229405749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229405741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6aa439da6e921d45822259325b673af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: 61
+  OneTimeUse: 1
 --- !u!1 &1269379904
 GameObject:
   m_ObjectHideFlags: 0
@@ -8998,6 +9056,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469037866}
+  - component: {fileID: 1469037867}
+  - component: {fileID: 1469037868}
   m_Layer: 0
   m_Name: Mantou Group
   m_TagString: Untagged
@@ -9023,6 +9083,38 @@ Transform:
   m_Father: {fileID: 828832374}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469037867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469037865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1371df8fdaa4bb6961836a0ad5fa34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: ladle
+  DistToGrab: 3
+  SnapPoint: {fileID: 1995222938}
+--- !u!114 &1469037868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469037865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d74b1895f673d4d81049cbf245ff8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyExpected: 51
+  RequiredStage: 32000000
+  StageOnComplete: 60
+  Unlocked: 0
+  PrefabToSpawn: {fileID: 8247178485345671435, guid: 586503b18105ee143b5b15b5848851b3, type: 3}
 --- !u!1 &1472350636
 GameObject:
   m_ObjectHideFlags: 0
@@ -9319,6 +9411,7 @@ GameObject:
   - component: {fileID: 1808073009}
   - component: {fileID: 1808073010}
   - component: {fileID: 1808073011}
+  - component: {fileID: 1808073012}
   m_Layer: 0
   m_Name: CompletedPlacer
   m_TagString: Untagged
@@ -9334,7 +9427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808073008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5, y: -3, z: 0}
+  m_LocalPosition: {x: 7.06, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9353,8 +9446,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnchorPoint: {fileID: 1808073009}
-  DistToSnap: 50
-  Key: cover
+  DistToSnap: 3
+  Key: ladle
 --- !u!114 &1808073011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9367,11 +9460,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d74b1895f673d4d81049cbf245ff8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyExpected: 22
-  RequiredStage: 00000000
-  StageOnComplete: 10
+  KeyExpected: 61
+  RequiredStage: 3c000000
+  StageOnComplete: 70
   Unlocked: 0
   PrefabToSpawn: {fileID: 8247178485345671435, guid: 586503b18105ee143b5b15b5848851b3, type: 3}
+--- !u!114 &1808073012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808073008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c2d4b182636431a86e055112fc5c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StageEnabled: 3c000000
+  enableSnap: {fileID: 1808073010}
+--- !u!1 &1995222937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995222938}
+  m_Layer: 0
+  m_Name: Mantou Snap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995222938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995222937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.07, y: -1.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1229405742}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018174490
 GameObject:
   m_ObjectHideFlags: 0
