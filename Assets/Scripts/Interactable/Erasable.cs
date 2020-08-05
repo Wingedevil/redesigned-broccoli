@@ -26,6 +26,9 @@ namespace Interactable {
                     if (TryGetComponent<ProgressStall>(out ProgressStall stall)) {
                         stall.StopStalling();
                     }
+                    if (TryGetComponent<PlayOnErase>(out PlayOnErase poe)) {
+                        poe.Play();
+                    }
                     Destroy(this.gameObject);
                 }
 
