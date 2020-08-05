@@ -296,13 +296,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7402928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.57, y: -5.84, z: 0}
+  m_LocalPosition: {x: -5.93, y: -5.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 780194773}
   - {fileID: 316255934}
   m_Father: {fileID: 746568287}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7402930
 MonoBehaviour:
@@ -722,7 +721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mantou Fried!
+  m_text: Buns Browned!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
   m_sharedMaterial: {fileID: 7341569059607567618, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
@@ -1149,6 +1148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentQuestStage: 0
+  InitialStage: 0
 --- !u!114 &231037486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,10 +1213,10 @@ Transform:
   m_GameObject: {fileID: 316255933}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4285712, y: 1.4285712, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 7402929}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &316255935
 SpriteRenderer:
@@ -1258,7 +1258,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f7be0fb185c057646940635628fde599, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d397d43d9b166d140b7c483106182edf, type: 3}
   m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2162,6 +2162,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 780194773}
   - {fileID: 7402929}
   - {fileID: 879763150}
   m_Father: {fileID: 1385058408}
@@ -2239,10 +2240,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780194772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3970778, y: 2.3970778, z: 1.6779547}
+  m_LocalPosition: {x: -5.9299994, y: -5.6099997, z: 0}
+  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 1}
   m_Children: []
-  m_Father: {fileID: 7402929}
+  m_Father: {fileID: 746568287}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &780194774
@@ -2285,7 +2286,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 03b1d9263477e4a42b4b5e4b2eed913e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c546ead4e72be2459575be7ae3b7440, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2567,7 +2568,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 746568287}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &879763151
 ParticleSystem:

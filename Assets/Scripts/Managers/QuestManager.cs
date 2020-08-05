@@ -10,6 +10,7 @@ namespace Managers {
         [HideInInspector]
         public int CurrentQuestStage;
         public Action<int> OnStageUpdate = (int x) => {};
+        public int InitialStage = 0;
 
         private int stagnate;
 
@@ -18,7 +19,7 @@ namespace Managers {
         }
 
         private void Init() {
-            OnStageUpdate(0);
+            OnStageUpdate(InitialStage);
         }
 
         public bool UpdateStage(int stage) {

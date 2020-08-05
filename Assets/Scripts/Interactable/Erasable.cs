@@ -36,7 +36,7 @@ namespace Interactable {
         }
 
         private void OnCollisionStay2D(Collision2D collision) {
-            if (Random.Range(0f, 1f) < 0.01f && collision.collider.TryGetComponent(out Eraser era)) {
+            if (Random.Range(0f, 1f) < 0.02f && collision.collider.TryGetComponent(out Eraser era)) {
                 Color tmp = GetComponent<SpriteRenderer>().color;
                 tmp.a -= era.Power * (1 - Resistance);
                 if (tmp.a > 0) {
