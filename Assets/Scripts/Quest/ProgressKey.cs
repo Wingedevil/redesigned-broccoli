@@ -35,6 +35,9 @@ namespace Quest {
                     }
                 }
 
+                if (@lock.TryGetComponent<PlayOnErase>(out PlayOnErase poe)) {
+                    poe.Play();
+                }
                 if (@lock.TryGetComponent<Draggable>(out Draggable drag)) {
                     Destroy(drag);
                 }
