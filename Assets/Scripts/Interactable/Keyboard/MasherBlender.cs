@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Interactable;
 using Managers;
+using System;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class MasherBlender : KeyMasherReceiver {
@@ -53,9 +54,13 @@ public class MasherBlender : KeyMasherReceiver {
             }
         }
         if (phase != 0) {
-            sauce.clip = clips[phase];
-            sauce.Play();
-            Invoke("Next", clips[phase].length);
+            try {
+                sauce.clip = clips[phase];
+                sauce.Play();
+                Invoke("Next", clips[phase].length);
+            } catch (Exception) {
+
+            }
         }
     }
 
