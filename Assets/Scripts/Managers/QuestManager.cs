@@ -13,6 +13,14 @@ namespace Managers {
 
         private int stagnate;
 
+        private void Start() {
+            Invoke("Init", 0.02f);
+        }
+
+        private void Init() {
+            OnStageUpdate(0);
+        }
+
         public bool UpdateStage(int stage) {
             if (stagnate > 0) {
                 return false;
