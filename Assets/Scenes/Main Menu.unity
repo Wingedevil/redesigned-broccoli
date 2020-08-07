@@ -844,15 +844,15 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
-  m_sharedMaterial: {fileID: 7341569059607567618, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
+  m_sharedMaterial: {fileID: 7341569059607567618, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1112,15 +1112,15 @@ MonoBehaviour:
 
     For Heritage Game Jam 2020'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
-  m_sharedMaterial: {fileID: 7341569059607567618, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
+  m_sharedMaterial: {fileID: 7341569059607567618, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1243,7 +1243,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -11
   m_Sprite: {fileID: 21300000, guid: 0c4ffb6fb237ca247bb4cb3b6bff0706, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1661,15 +1661,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Recipe from: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
-  m_sharedMaterial: {fileID: 7341569059607567618, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
+  m_sharedMaterial: {fileID: 7341569059607567618, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1971,15 +1971,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: ' Start'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
-  m_sharedMaterial: {fileID: 7341569059607567618, guid: 80471fc7fe9300e4eafdaf4249412042, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
+  m_sharedMaterial: {fileID: 7341569059607567618, guid: d1bc40b4c407ec240b37143c8dcb6249, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
