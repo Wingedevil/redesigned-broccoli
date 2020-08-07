@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: be5407efe54da4e4284154028fc9def3
   - enabled: 1
     path: Assets/Scenes/FoodProcessor.unity

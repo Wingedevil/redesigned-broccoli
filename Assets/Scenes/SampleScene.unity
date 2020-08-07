@@ -667,7 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6558b3547c3f7d342b364599955cfcdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: Main
+  SceneToLoad: MainMenu
   StageEnabled: 0a000000
 --- !u!114 &771321118
 MonoBehaviour:
