@@ -271,6 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RecipeWindow: {fileID: 671009994}
   CreditsWindow: {fileID: 523845130}
+  SceneToLoad: 1
 --- !u!114 &462161743
 MonoBehaviour:
   m_ObjectHideFlags: 0

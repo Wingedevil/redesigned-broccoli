@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CustomUtils;
+using UnityEngine.SceneManagement;
 
 namespace Managers
 {
     public class UIManager : Manager<UIManager> {
         public GameObject RecipeWindow;
         public GameObject CreditsWindow;
+        public int SceneToLoad;
 
         private void Start() {
             RecipeWindow.SetActive(false);
@@ -24,7 +26,7 @@ namespace Managers
         public void OnStart() {
             Debug.Log("Game Started");
 
-            // If we have a scene manager, switch scenes here
+            SceneManager.LoadScene(SceneToLoad);
         }
 
         public void OnRecipe() {
