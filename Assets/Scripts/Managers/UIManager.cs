@@ -9,10 +9,6 @@ namespace Managers
     public class UIManager : Manager<UIManager> {
         public string SceneToLoad;
 
-        private void Start() {
-            DontDestroyOnLoad(this.gameObject);
-        }
-
         public void OnStart() {
             Debug.Log("Game Started");
 

@@ -9379,7 +9379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageEnabled: 320000003c000000
-  OutlineSize: 15
+  OutlineSize: 6
 --- !u!60 &1229405746
 PolygonCollider2D:
   m_ObjectHideFlags: 0
