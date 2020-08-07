@@ -7,20 +7,10 @@ using UnityEngine.SceneManagement;
 namespace Managers
 {
     public class UIManager : Manager<UIManager> {
-        public GameObject RecipeWindow;
-        public GameObject CreditsWindow;
-        public int SceneToLoad;
+        public string SceneToLoad;
 
         private void Start() {
-            RecipeWindow.SetActive(false);
-            CreditsWindow.SetActive(false);
-        }
-
-        private void Update() {
-            if (Input.GetKeyDown(KeyCode.Escape)) {
-                RecipeWindow.SetActive(false);
-                CreditsWindow.SetActive(false);
-            }
+            DontDestroyOnLoad(this.gameObject);
         }
 
         public void OnStart() {
@@ -31,17 +21,14 @@ namespace Managers
 
         public void OnRecipe() {
             Debug.Log("Recipe Opened");
-            RecipeWindow.SetActive(true);
-        }
-
-        public void OnCredits() {
-            Debug.Log("Credits Opened");
-            CreditsWindow.SetActive(true);
-        }
+            Application.OpenURL("https://www.nyonyacooking.com/recipes/singapore-style-chilli-crab~Bk6QdvoPf9Z7");
+        }       
 
         public void OnExit() {
             Debug.Log("Game Stopped");
             Application.Quit();
-        }
+        }   
+
+        
     }
 }
